@@ -1,0 +1,33 @@
+{% load static i18n %}
+{% load static %}
+<html>
+<head>
+    <title>JAVA Downloads</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="shotcut icon" type="image/x-icon" href={% static 'images/brid-logo-copy.jpg' %}>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="language_chooser navbar-header">
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <form class="form-inline" action="{% url 'set_language' %}" method="post">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}" />
+                <input name="language" type="hidden" value="{{ language.code }}" />
+                <button type="submit" class="btn btn-link">{{ language.name_local }}</button>
+            </form>
+        {% endfor %}
+    </div>
+    <div class="jumbotron text-center">
+      <h1 class="display-3">JAVA SDK Downloads</h1>
+      <p><a href="http://www.bridsys.com/downloads/java/jdk-7u79-linux-i586.tar.gz" class="style1">Java 7U79 SDK for Linux (i586)</a></p>
+      <p><a href="http://www.bridsys.com/downloads/java/jdk-7u79-linux-i586.tar.gz" class="style1">Java 7U79 SDK for Linux (x64)</a></p>
+      <p><a href="http://www.bridsys.com/downloads/java/jdk-7u79-linux-i586.tar.gz" class="style1">Java 7U79 SDK for Windows (i586)</a></p>
+      <p><a href="http://www.bridsys.com/downloads/java/jdk-7u79-linux-i586.tar.gz" class="style1">Java 7U79 SDK for Windows (x64)</a></p>
+      <p class="lead">
+        <a class="btn btn-primary btn-sm" href="/" role="button">{% trans "Continue to Homepage" %}</a>
+      </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!-- templates/base.html -->
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shotcut icon" type="image/x-icon" href={% static 'static-only/admin/img/brid-logo-copy.jpg' %}>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQlaoWXA+058RXPxPg6fy4IWvTNh0E2\63XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery.js -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap.js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title>{% block title %}{% trans "BRID" %}{% endblock title %}</title>
+
+    <style>
+        .dropdown-container {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+		<a class="navbar-brand" href="{% url 'home' %}">{% trans "BRID" %}</a>
+        <a class="btn btn-dark" href="{% url 'article_list' %}">{% trans "Articles" %}</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" controls="navbarCollapse" aria-expanded="false" aria-lable="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			<div class="collapse navbar-collapse dropdown-container" id="navbarCollapse">
+			{% if user.is_authenticated %}
+				<ul class="navbar-nav">
+						<a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							{{ user.username}}
+						</a>
+						<div class="dropdown-menu" aria-labelledby="userMenu">
+						    <a class="dropdown-item" href="{% url 'password_change' %}">{% trans "Change password" %}</a>
+						<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="{% url 'logout' %}">{% trans "Log out" %}</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="{% url 'article_new' %}">+ {% trans "New Article" %}</a></li>
+				</ul>
+                <div class="form-inline ml-auto">
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                        <input name="language" type="hidden" value="{{ language.code }}" />
+                        <button type="submit" class="btn btn-light">{{ language.code }}</button>
+                    </form>
+                {% endfor %}
+            </div>
+			{% else %}
+            <div class="form-inline">
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                        <input name="language" type="hidden" value="{{ language.code }}" />
+                        <button type="submit" class="btn btn-light">{{ language.code }}</button>
+                    </form>
+                {% endfor %}
+            </div>
+			<form class="form-inline ml-auto">
+				<a href="{% url 'login' %}" class="btn btn-primary ml-2">{% trans "Login" %}</a>
+			</form>
+			{% endif %}
+		</div>
+	</nav>
+	<div class="container">
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+</html>

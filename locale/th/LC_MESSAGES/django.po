@@ -1,0 +1,1656 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-13 20:18+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\bridwebenv\Lib\site-packages\crispy_forms\tests\test_form_helper.py:140
+#: .\bridwebenv\Lib\site-packages\crispy_forms\tests\test_form_helper.py:150
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:53
+msgid "This field is required."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\crispy_forms\tests\test_layout.py:355
+msgid "i18n text"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\crispy_forms\tests\test_layout.py:357
+msgid "i18n legend"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\crispy_forms\tests\test_layout_objects.py:127
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:31
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\contrib\messages\apps.py:7
+msgid "Messages"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\contrib\sitemaps\apps.py:7
+msgid "Site Maps"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\paginator.py:40
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\paginator.py:42
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\paginator.py:47
+msgid "That page contains no results"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:102
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:649
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:154
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:165
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:239
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:246
+msgid ""
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:255
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:275
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:260
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:276
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:270
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:274
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:304
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:310
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:341
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:350
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:360
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:375
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:395
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:400
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:405
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:465
+#, python-format
+msgid ""
+"File extension '%(extension)s' is not allowed. Allowed extensions are: "
+"'%(allowed_extensions)s'."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\core\validators.py:518
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\base.py:1125
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:753
+msgid "and"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\base.py:1127
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:105
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:106
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:107
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:108
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:112
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:129
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:882
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1782
+msgid "Integer"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:886
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1780
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:959
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1851
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:971
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:973
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1039
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1102
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1150
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1152
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1294
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1155
+msgid "Date (without time)"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1292
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1296
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1300
+msgid "Date (with time)"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1447
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1449
+msgid "Decimal number"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1601
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1604
+msgid "Duration"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1656
+msgid "Email address"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1680
+msgid "File path"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1746
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1748
+msgid "Floating point number"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1866
+msgid "IPv4 address"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1897
+msgid "IP address"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1978
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:1980
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2043
+msgid "Positive integer"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2055
+msgid "Positive small integer"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2068
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2098
+msgid "Small integer"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2105
+msgid "Text"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2133
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2135
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2138
+msgid "Time"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2263
+msgid "URL"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2286
+msgid "Raw binary data"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\__init__.py:2333
+#, python-format
+msgid "'%(value)s' is not a valid UUID."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\files.py:221
+msgid "File"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\files.py:359
+msgid "Image"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\related.py:780
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\related.py:782
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\related.py:1001
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\related.py:1051
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\related.py:1052
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\db\models\fields\related.py:1094
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\bridwebenv\Lib\site-packages\django\forms\boundfield.py:171
+msgid ":?.!"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:245
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:290
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:325
+msgid "Enter a number."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:396
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:1114
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:420
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:1115
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:442
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:471
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:525
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:526
+msgid "No file was submitted."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:527
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:529
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:532
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:597
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:753
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:843
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:1267
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:844
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:959
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:1266
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:960
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\fields.py:1173
+msgid "Enter a valid UUID."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\bridwebenv\Lib\site-packages\django\forms\forms.py:86
+msgid ":"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\forms.py:207
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\formsets.py:91
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\formsets.py:338
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\formsets.py:345
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\formsets.py:371
+#: .\bridwebenv\Lib\site-packages\django\forms\formsets.py:373
+msgid "Order"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\formsets.py:375
+#: .\templates\article_list.html:18
+msgid "Delete"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:748
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:752
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:758
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:767
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:1094
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:1155
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\models.py:1269
+#, python-format
+msgid "\"%(pk)s\" is not a valid value."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\utils.py:162
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\widgets.py:391
+msgid "Clear"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\widgets.py:392
+msgid "Currently"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\widgets.py:393
+msgid "Change"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\widgets.py:708
+msgid "Unknown"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\widgets.py:709
+msgid "Yes"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\forms\widgets.py:710
+msgid "No"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\template\defaultfilters.py:783
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\template\defaultfilters.py:812
+#: .\bridwebenv\Lib\site-packages\django\template\defaultfilters.py:829
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\template\defaultfilters.py:831
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\template\defaultfilters.py:833
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\template\defaultfilters.py:835
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\template\defaultfilters.py:837
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\template\defaultfilters.py:839
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dateformat.py:62
+msgid "p.m."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dateformat.py:63
+msgid "a.m."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dateformat.py:68
+msgid "PM"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dateformat.py:69
+msgid "AM"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dateformat.py:150
+msgid "midnight"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dateformat.py:152
+msgid "noon"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:11
+msgid "Sat"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:18
+msgid "January"
+msgstr "มกราคม"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:18
+msgid "February"
+msgstr "กุมภาพันธ์"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:18
+msgid "March"
+msgstr "มีนาคม"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:18
+msgid "April"
+msgstr "เมษายน"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:18
+msgid "May"
+msgstr "พฤษภาคม"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:18
+msgid "June"
+msgstr "มิถุนายน"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:19
+msgid "July"
+msgstr "กรกฎาคม"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:19
+msgid "August"
+msgstr "สิงหาคม"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:19
+msgid "September"
+msgstr "กันยายน"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:19
+msgid "October"
+msgstr "ตุลาคม"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:19
+msgid "November"
+msgstr "พฤศจิกายน"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:20
+msgid "December"
+msgstr "ธันวาคม"
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:23
+msgid "jan"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:23
+msgid "feb"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:23
+msgid "mar"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:23
+msgid "apr"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:23
+msgid "may"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:23
+msgid "jun"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:24
+msgid "jul"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:24
+msgid "aug"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:24
+msgid "sep"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:24
+msgid "oct"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:24
+msgid "nov"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:24
+msgid "dec"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:31
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:32
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:33
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:34
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:35
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:36
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:37
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:38
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:39
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:40
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:41
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:42
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:45
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:46
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:47
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:48
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:49
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:50
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:51
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:52
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\text.py:70
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s..."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\text.py:237
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\bridwebenv\Lib\site-packages\django\utils\text.py:256
+#: .\bridwebenv\Lib\site-packages\django\utils\timesince.py:69
+msgid ", "
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\timesince.py:14
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\bridwebenv\Lib\site-packages\django\utils\timesince.py:58
+msgid "0 minutes"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\csrf.py:110
+msgid "Forbidden"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\csrf.py:111
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\csrf.py:115
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\csrf.py:120
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\csrf.py:124
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
+"CSRF protection requires the 'Referer' header to do strict referer checking. "
+"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" ...> for links to third-party sites."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\csrf.py:132
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\csrf.py:137
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\csrf.py:142
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:41
+msgid "No year specified"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:61
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:111
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:208
+msgid "Date out of range"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:90
+msgid "No month specified"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:142
+msgid "No day specified"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:188
+msgid "No week specified"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:338
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:367
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:585
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\dates.py:619
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\detail.py:53
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\list.py:67
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\list.py:72
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\generic\list.py:154
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\static.py:41
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\static.py:43
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\static.py:83
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:6
+msgid "Django: the Web framework for perfectionists with deadlines."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:345
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:367
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:368
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:383
+msgid "Django Documentation"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:384
+msgid "Topics, references, &amp; how-to's"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:395
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:396
+msgid "Get started with Django"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:407
+msgid "Django Community"
+msgstr ""
+
+#: .\bridwebenv\Lib\site-packages\django\views\templates\default_urlconf.html:408
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\homepage\forms.py:6
+msgid "Name"
+msgstr "ชื่อ"
+
+#: .\homepage\forms.py:7
+msgid "Email"
+msgstr "อีเมล"
+
+#: .\homepage\forms.py:11
+msgid "Message"
+msgstr "ข้อความ"
+
+#: .\templates\article_edit.html:13 .\templates\article_list.html:18
+msgid "Edit"
+msgstr "แก้ไข"
+
+#: .\templates\article_list.html:6
+#, fuzzy
+#| msgid "Articles"
+msgid "BRID | Articles"
+msgstr "บริด | บทความ"
+
+#: .\templates\article_list.html:13
+msgid "by"
+msgstr "โดย"
+
+#: .\templates\article_new.html:13 .\templates\base.html:55
+msgid "New Article"
+msgstr "เพิ่มบทความ"
+
+#: .\templates\base.html:26 .\templates\base.html:36 .\templates\home.html:188
+msgid "BRID"
+msgstr "บริด"
+
+#: .\templates\base.html:37
+msgid "Articles"
+msgstr "บทความ"
+
+#: .\templates\base.html:48
+msgid "Change password"
+msgstr "เปลี่ยนรหัสผ่าน"
+
+#: .\templates\base.html:50
+msgid "Log out"
+msgstr "ออกจากระบบ"
+
+#: .\templates\base.html:81
+msgid "Login"
+msgstr "เข้าสู่ระบบ"
+
+#: .\templates\home.html:5
+msgid "BRID | Welcome"
+msgstr "บริด | ยินดีต้อนรับ"
+
+#: .\templates\home.html:203 .\templates\home.html:240
+msgid "SERVICES"
+msgstr "การบริการ"
+
+#: .\templates\home.html:204
+msgid "PRODUCTS"
+msgstr "สินค้า"
+
+#: .\templates\home.html:205 .\templates\home.html:291
+msgid "SUPPORT"
+msgstr "การดูแล"
+
+#: .\templates\home.html:206
+msgid "PRESS"
+msgstr "สื่อสาร"
+
+#: .\templates\home.html:207 .\templates\home.html:341
+msgid "CONTACT US"
+msgstr "ติดต่อเรา"
+
+#: .\templates\home.html:214
+msgid "BRID Systems"
+msgstr "บริด ซิสเต็มส์"
+
+#: .\templates\home.html:215
+msgid "Your ERP Partner"
+msgstr "พันธมิตรด้านระบบ ERP ที่แท้จริงของคุณ"
+
+#: .\templates\home.html:222
+msgid "ABOUT US"
+msgstr "เกี่ยวกับเรา"
+
+#: .\templates\home.html:223
+msgid ""
+"With two decades of experience in developing and implementing our PlanetOne "
+"ERP, we have now supported over one hundred business organizations all over "
+"Thailand"
+msgstr ""
+"ระบบ PlanetOne ERP "
+"เป็นระบบอีอาร์พีของไทยที่ได้รับการพัฒนามาอย่างยาวนานต่อเนื่องกันมาเป็นเวลาเกือบสองทศวรรษ "
+"ทำให้ระบบ PlanetOne ERP "
+"ของเราได้รับความไว้วางใจและมีการวางระบบอีอาร์พีของเราอยู่ในเกือบหนึ่งร้อยองค์กรทั่วประเทศ"
+
+#: .\templates\home.html:224
+msgid ""
+"PlanetOne ERP is a complete enterprise business accounting and management "
+"solution for manufacturing and businesses in Thailand. It is highly flexible "
+"yet integrated with best practice on business logic engine, thus allows "
+"businesses to transform their processes to be more competitive in the modern "
+"business environment. PlanetOne ERP covers wide range of manufacturing and "
+"business operations which includes: Material Management, Purchasing, Sales, "
+"CRM, SCM, Financials & Accounting, Account Receivable System, Account "
+"Payable System, General Ledger System, Asset Management, Hire Purchase, "
+"Building Management, and much more..."
+msgstr ""
+"PlanetOne ERP คือระบบซอฟต์แวร์อีอาร์พี สำหรับองค์กรที่สมบูรณ์แบบ เป็นระบบที่มีความยืดหยุ่นสูง "
+"รวมถึงยังนำเอาระบบการทำงานที่เป็น "
+"มาตรฐานสากลเข้ามาประสานไว้ในระบบเพื่อให้ลูกค้าได้ระบบที่เป็นลักษณะเวิลด์คลาส "
+"ระบบของเราสามารถรองรับลูกค้าในกลุ่มอุตสาหกรรมต่างๆ มากมาย อาทิเช่น กลุ่มอุตสาหกรรมการผลิต "
+"ไม่ว่าจะเป็นอาหาร ชิ้นส่วนยานยนต์เหล็ก พลาสติก จิวเวลรี่ และอีกหลายกลุ่มผลิตภัณฑ์ กลุ่มธุรกิจ "
+"ซื้อมาขายไป และ รวมถึงธุรกิจบริการ ไม่ว่าจะเป็น โรงแรม อพาร์ตเมนต์ ศูนย์บริการและอื่นๆ"
+
+#: .\templates\home.html:225
+msgid ""
+"PlanetOne ERP Software is a fully integrated business system: Manufacturing, "
+"Distribution and Financial Accounting. Our PlanetOne ERP includes Purchasing "
+"System, Sales Order System, Inventory Control System, Production Planning "
+"System, MRP System, Job Cost System, Account Receivable System, Account "
+"Payable System, General Ledger System, CRM System, Mobile Applications, "
+"Service Center Management System, Hotel Management System, Assets Management "
+"System, and many more. It provides you with a better customer service, helps "
+"reducing inventory, and increases staff productivity. PlanetOne ERP is "
+"highly integrated with MRP II System. It meets local accounting and tax "
+"requirements with fully customizable reports system to fit your business."
+msgstr ""
+"PlanetOne ERP ประกอบด้วยส่วนสำคัญต่างๆ ขององค์กรตั้งแต่ ระบบจัดซื้อ ระบบการขาย "
+"ระบบสินค้าคงคลัง ระบบการผลิต ระบบวางแผนการผลิต ระบบควบคุมคุณภาพการผลิต ในสายการผลิต "
+"ระบบบัญชีลูกหนี้ ระบบบัญชีเจ้าหนี้ ระบบบัญชีทั่วไป ระบบบัญชีต้นทุน ระบบควบคุมและซ่อมบำรุงสินทรัพย์ "
+"ระบบเช่าซื้อ ระบบบริหารงานโรงแรม และอพาร์ตเมนต์ ระบบขายหน้าร้านระบบลูกค้าสัมพันธ์ "
+"ระบบมือถือและอื่นๆ อีกมากมาย"
+
+#: .\templates\home.html:241
+msgid "Our Services:"
+msgstr "บริการของเรา"
+
+#: .\templates\home.html:241
+msgid ""
+"The services we provide have many different titles. Most of our clients "
+"don’t know exactly what they want when they call us but they do know of a "
+"problem that needs to be resolved or an opportunity that needs to be "
+"leveraged. We take the client’s needs and provide an elegant solution, "
+"turning our client’s ideas into digital reality. We work with our clients to "
+"help them determine exactly what they need then come up with a plan to "
+"achieve it within your time and budget requirements."
+msgstr ""
+"บริการของเรามีหลากหลายรูปแบบให้คุณได้อุ่นใจกับการ ใช้งานระบบของเรา "
+"ลูกค้าของเราโดยมากมักไม่รู้ว่าความต้องการขององค์กรเป็นอย่างไรเมื่อโทรติดต่อเข้ามาหาเรา "
+"แค่ลูกค้าเหล่านี้ทราบถึงปัญหาที่องค์กรกำลังประสบอยู่และ ต้องการแก้ไขปัญหาต่างๆนี้โดยด่วน "
+"และหลายๆองค์กรเองก็ทราบถึงโอกาสที่จะเพิ่มความสามารถในการแข่งขัน "
+"โดยมีระบบเข้าไปช่วยให้องค์กรมีการทำงานอย่างเป็นบูรณาการมากขึ้น "
+"เรานำความต้องการต่างๆเหล่านี้ของลูกค้า แล้วนำเสนอระบบที่ชาญฉลาดให้กับลูกค้า "
+"โดยแปลงเอาไอเดียของลูกค้ามาทำให้เป็นความจริงทางดิจิตอลเราทำงานกับลูกค้าเพื่อช่วยให้ลูกค้าสามารถมั่นใจได้อย่างแน่นอนกับ "
+"สิ่งที่ต้องการ และช่วยในการวางแผนเพื่อให้ไปถึงจุดหมายในเวลาที่กำหนดและในงบประมาณที่ตั้งไว้"
+
+#: .\templates\home.html:242
+msgid "System Integration:"
+msgstr "การบูรณาการด้านระบบ"
+
+#: .\templates\home.html:242
+msgid ""
+"Brid Systems Co.,Ltd., a truly professional system integrator, provides "
+"customers with feasible solution based on their requirement and resources. "
+"We also provide services to integrate diverse hardware and software to "
+"ensure an optimal use of Information Technology through on-site support. "
+"Brid Systems Co.,Ltd offers customers with Turn-Key service in information "
+"system development including."
+msgstr ""
+"เราเป็นมืออาชีพทางด้านการให้คำปรึกษาในการบรูณาการทางด้านระบบสารสนเทศ "
+"เพื่อให้ลูกค้าได้ระบบที่เป็นไปได้บนพื้นฐานของความต้องการและทรัพยากรขององค์กรลูกค้าเอง "
+"เราให้บริการในการให้คำปรึกษาทั้งทางด้านของฮาร์ตแวร์ และซอฟต์แวร์ "
+"เพื่อให้ลูกค้าได้รับประโยชน์สูงสุดจาการใช้ระบบสารสนเทศ"
+
+#: .\templates\home.html:249
+msgid "Products"
+msgstr "สินค้า"
+
+#: .\templates\home.html:250
+msgid "Simple and Powerful"
+msgstr "เรียบง่ายแต่ทรงพลัง"
+
+#: .\templates\home.html:253
+msgid "Quotation Module"
+msgstr "ระบบการออกใบเสนอราคา"
+
+#: .\templates\home.html:254
+msgid ""
+"Develop quotes quickly and easily! Users can quickly quote items factoring "
+"in such costs as materials, taxes, and service fee markups. Service fee can "
+"be done as a percentage or amount. "
+msgstr ""
+"ผู้ใช้งานสามารถออกใบเสนอราคาได้อย่างรวดเร็ว และง่ายต่อการใช้งาน "
+"ระบบสามารถออกใบเสนอราคาโดยคิดคำนวณต้นทุนการผลิตต่างๆ ได้ตั้งแต่ต้นทุนสินค้า ภาษี "
+"ค่าบริการต่างๆ เพื่ออำนวยความสะดวกในการตรวจสอบกำไรเบื้องต้น "
+"ก่อนที่จะทำการยื่นใบเสนอราคาให้กับลูกค้า"
+
+#: .\templates\home.html:257
+msgid "Purchasing"
+msgstr "ระบบบริหารการจัดซื้อ"
+
+#: .\templates\home.html:258
+msgid ""
+"You can maintain consistent controlled relationships with unlimited "
+"suppliers for full flexibility. Detailed information at your fingertips will "
+"allow you to see how you can improve your cash flow, from highlighting "
+"outstanding payments to improving credit control."
+msgstr ""
+"คุณสามารถเก็บข้อมูลการสั่งซื้อ ประวัติการสั่งซื้อต่างๆ "
+"ระบบให้คุณสามารถเชื่อมโยงสินค้ากับผู้ขายและยังอนุญาต "
+"ให้คุณเก็บข้อมูลใบเสนอราคาของผู้ขายแต่ละราย ได้อย่างไม่จำกัด "
+"คุณสามารถตรวจสอบราคาที่ดีที่สุดจากข้อมูลที่ฝ่ายจัดซื้อป้อนเข้าสู่ระบบ ให้เป็นทางเลือกในการสั่งซื้อสินค้า "
+"ระบบยังมีการเก็บข้อมูลคุณภาพ และการส่งสินค้าและ บริการที่ตรงต่อเวลาของผู้จัดจำหน่ายอีกด้วย"
+
+#: .\templates\home.html:263
+msgid "Sales Order"
+msgstr "ระบบการขาย"
+
+#: .\templates\home.html:264
+msgid ""
+"A simple mouse click transforms a quote into a sales order. An entire quote "
+"can become a sales order. Allows you to keep track of what your customers "
+"are buying, when they buy and how much they purchase. Comprehensive customer "
+"records, with flexible terms of business, individual pricing and discount "
+"options store all the details of your customers."
+msgstr ""
+"ง่ายเพียงเม้าส์คลิ๊กคุณก็สามารถเปลี่ยนใบเสนอราคาของคุณให้เป็นใบสั่งขายได้ทันที "
+"ใบเสนอราคาจะถูกเปลี่ยนเป็นใบสั่งขายโดยอัตโนมัติ คุณสามารถติดตามและตรวจสอบ สินค้าที่ลูกค้าสั่งซื้อ "
+"เวลาที่ลูกค้าสั่งซื้อ และจำนวนที่มีการสั่งซื้อ ระบบทำการเก็บข้อมูลลูกค้าของคุณ อย่างละเอียด "
+"พร้อมข้อมูลเงื่อนไขทางธุรกิจให้คุณอย่างครบถ้วน คุณสามารถตั้งราคาขายให้กับลูกค้าแต่ละราย "
+"พร้อมเงื่อนไขส่วนลดต่างๆ ที่มอบให้ลูกค้าอีกด้วย"
+
+#: .\templates\home.html:267
+msgid "Inventory Module"
+msgstr "ระบบคลังสินค้า"
+
+#: .\templates\home.html:268
+msgid ""
+"PlanetOne manufacturing inventory software is tracked as it is received and "
+"used. Minimum and maximum inventory levels for items can be set. Users are "
+"“flagged”: if inventory levels fall below a pre set amount, or if inventory "
+"ordered/received exceeds the maximum pre set amount. System can prompt "
+"allows users to create a P.O. to reorder."
+msgstr ""
+"PlanetOne สำหรับการบริหารคลังสินค้าเพื่อผู้ผลิตเป็นระบบที่ช่วย ในการติดตามการรับสินค้าเข้า "
+"และการเบิกสินค้าออกตามความเป็นจริงที่เกิดขึ้น ในเวลาที่เกิดขึ้นจริง "
+"คุณสามารถกำหนดระดับต่ำสุดและสูงสุดของสินค้าและวัตถุดิบต่างๆ ได้เอง "
+"และสามารถเปลี่ยนแปลงได้เมื่อมีความจำเป็น ผู้ใช้งานระบบสามารถรับรู้ถึงข้อมูล "
+"ในกรณีที่ระดับของสต๊อกสินค้าต่ำกว่าระดับที่มีการกำหนดไว้รวมถึงในกรณีถ้ามีการสั่งซื้อ/สั่งผลิต/"
+"รับเข้าสต๊อกสินค้า มากเกินกว่าระดับที่มีการกำหนดไว้ "
+"ในกรณีที่มีสินค้าไม่พอเพียงต่อการผลิตหรือการขายระบบจะมี การสร้างใบขอสั่งซื้อให้ผู้ใช้งานทราบ"
+
+#: .\templates\home.html:273
+msgid "Shop Floor Control"
+msgstr "ระบบควบคุมการผลิต"
+
+#: .\templates\home.html:274
+msgid ""
+"Users, with simple mouse clicks, can quickly create each job's step by step "
+"production procedures and inspection requirements, certification "
+"requirements, materials needed and deadlines. Allows an order to be split up "
+"into multiple shop travelers to be produced at separate times. Production "
+"Management tools are provided for the monitoring of production and output. "
+"At any time, the job status of a particular order can be checked including "
+"where it is in the production cycle, and the work remaining. Date range "
+"reports can be pulled detailing how much product was actually shipped during "
+"a given time. Other reports detail such things as work in production and the "
+"dollar value of that work. Managers can also easily review missed or "
+"approaching deadlines."
+msgstr ""
+"ผู้ใช้ระบบสามารถสร้างใบสั่งผลิตสำหรับผลิตสินค้าแต่ละขั้นตอน พร้อมทั้งข้อมูลการตรวจสอบ "
+"ความต้องการของการรับรองคุณภาพ สินค้าและวัตถุดิบที่ต้องการ รวมถึงกำหนดการในการส่งสินค้า "
+"ได้อย่างง่ายดายเพียงเมาส์คลิ๊กเท่านั้น สถานะของงานในสายการผลิตสามารถถูกตรวจสอบได้ "
+"ตลอดเวลาจากระบบ ไม่ว่าจะเป็นรอบระยะเวลาที่ใช้ในการผลิต จำนวนชิ้นงานที่ผลิตได้ "
+"และความสูญเสียที่เกิดขึ้นในสายการผลิต"
+
+#: .\templates\home.html:277
+msgid "General Ledger"
+msgstr "ระบบบัญชีทั่วไป"
+
+#: .\templates\home.html:278
+msgid ""
+"As the backbone of your business management solution, PlanetOne accounting "
+"and finance solutions help you track and analyze your business information. "
+"With end-to-end integration, you can efficiently manage your general ledger, "
+"payables, receivables, inventory, analytical accounting, fixed assets, and "
+"cash flow as well as perform bank reconciliations and collections. You can "
+"also manage your financial processes across multiple currencies, locations, "
+"or companies."
+msgstr ""
+"ระบบบัญชีและการเงินของ PlanetOneERP นับเป็นหัวใจสำคัญต่อการบริหารจัดการในองค์กรธุรกิจ "
+"และเนื่องจากระบบมีการเชื่อมโยงข้อมูลจากต้นทางสู่ ปลายทาง คุณสามารถบริหารจัดการ "
+"วิเคราะห์ข้อมูลต่างๆ ได้อย่างมีประสิทธิภาพ ไม่ว่าจะเป็นข้อมูลบัญชีลูกหนี้ บัญชีทั่วไป สต๊อกสินค้า "
+"สินทรัพย์ถาวร กระแสเงินสด การตรวจสอบข้อมูลเงินใบบัญชีธนาคาร และแม้กระทั่ง "
+"การตามเก็บหนี้จากลูกหนี้ของคุณ ระบบให้คุณมีความสามารถในการวิเคราะห์ "
+"ในการจัดการกระบวนการเงินในสกุลเงินต่างๆ รวมถึงการบริหารการเงินของบริษัทในเครือได้อีกด้วย"
+
+#: .\templates\home.html:283
+msgid "Warehouse Management"
+msgstr "ระบบบริหารจัดการคลังสินค้า"
+
+#: .\templates\home.html:284
+msgid ""
+"PlanetOne Warehouse Management Systems saves your business time and money "
+"through efficient warehouse processes. It also Reduces your warehouse costs "
+"and improves your customer service by speeding up the order handling "
+"process, Streamlines your warehouse operations by providing transparent and "
+"accurate inventory data, and Enables you to optimize your warehouse layout "
+"and space utilization."
+msgstr ""
+"PlanetOne แวร์เฮ้าส์ แมนเนจเม้นท์ ซิสเต็มส์ "
+"จะช่วยธุรกิจของคุนในการประหยัดเวลาและค่าใช้จ่ายต่างๆ "
+"ในการบริหารจัดการคลังสินค้าโดยการทำให้กระบวนการทำงานมีประสิทธิภาพมากขึ้น "
+"ระบบช่วยในการลดต้นทุนการบริหารจัดการภายในคลังสินค้าและเพิ่มการปรับปรุงการให้บริการกับลูกค้าของธุรกิจโดยช่วยให้กระบวนการทำงานและจัดการส่งสินค้าให้กับลูกค้ามีความรวดเร็วและถูกต้องมากขึ้น "
+"อีกทั้งยังช่วยในการลดความยุ่งยากซ้ำซ้อนของการทำงานเนื่องจากระบบสามารถให้ข้อมูลที่มีความโปร่งใสและแม่นยำของข้อมูลคลังสินค้า "
+"ระบบยังสามารถช่วยให้ลูกค้าจัดการกับผังของคลังสินค้าและเนื้อที่เพื่อให้การทำงานเป็นไปอย่างมีประสิทธิภาพสูงสุดอีกด้วย"
+
+#: .\templates\home.html:292
+msgid "Quality assurance"
+msgstr "การประกันคุณภาพ"
+
+#: .\templates\home.html:296
+msgid "PlanetOneERP Forum"
+msgstr ""
+
+#: .\templates\home.html:297
+msgid "This community is all about PlanetOneERP discussions."
+msgstr ""
+
+#: .\templates\home.html:300
+msgid "BRID JTrac"
+msgstr ""
+
+#: .\templates\home.html:301
+msgid ""
+"Users may request assistance and new feature upgrades and report bugs or "
+"defects through our Electronic Issues Processing System."
+msgstr ""
+
+#: .\templates\home.html:307
+msgid "Providing value to our customers"
+msgstr ""
+
+#: .\templates\home.html:308
+msgid ""
+"We realize that our products are an integral part of your business-critical "
+"environment. That is why we provide comprehensive customer support services "
+"24/7. Whether it is a basic question or complex product issue, our support "
+"services and expert technical analysts are available to effectively address "
+"your every need."
+msgstr ""
+
+#: .\templates\home.html:311
+msgid "PlanetOne ERP’s Support Team"
+msgstr ""
+
+#: .\templates\home.html:312
+msgid ""
+"consists of professionals who are not only focused on providing the best "
+"support service, but also on perpetually improving themselves. We challenge "
+"each of our team members to increase their product or industry knowledge, "
+"and to pursue a variety of industry certifications. These efforts increase "
+"the confidence and capability of each support representative in delivering "
+"service to you."
+msgstr ""
+
+#: .\templates\home.html:315
+msgid "PlanetOne ERP offers"
+msgstr ""
+
+#: .\templates\home.html:316
+msgid ""
+"comprehensive telephone and online support for its customers, with measured "
+"and proven responsiveness. In addition to quality support, you’ll have a "
+"variety of tools to help you get the most from your service plan."
+msgstr ""
+
+#: .\templates\home.html:322
+msgid "Download JAVA SDKs"
+msgstr "ดาวน์โหลด JAVA SDKs"
+
+#: .\templates\home.html:329
+#, fuzzy
+#| msgid "News & Events"
+msgid "News & Updates"
+msgstr "ข่าวสารและกิจกรรม"
+
+#: .\templates\home.html:330
+msgid "Read news and updates written by our staffs"
+msgstr "ติดตามข่าวสารของเราได้"
+
+#: .\templates\home.html:331
+msgid "here"
+msgstr "ที่นี่"
+
+#: .\templates\home.html:333
+msgid "Featured Playlist"
+msgstr "เพลย์ลิสต์เด่น"
+
+#: .\templates\home.html:344
+msgid "Contact us and we'll get back to you ASAP."
+msgstr "ติดต่อเราและเราจะติดต่อกลับโดยเร็วที่สุด"
+
+#: .\templates\home.html:345
+msgid "40/30 Intamara 23, Sudhisarn Road, Samsenai, Phayathai, Bangkok 10400"
+msgstr "40/30 ซอยอินทามาระ 23 ถนนสุทธิสาร สามเสนใน พญาไท กรุงเทพฯ 10400"
+
+#: .\templates\home.html:380
+msgid "Send"
+msgstr "ส่ง"
+
+#: .\templates\java_download.html:29
+msgid "Continue to Homepage"
+msgstr "กลับสู่หน้าหลัก"
+
+#: .\templates\registration\password_reset_email.html:3
+msgid "Hi"
+msgstr "สวัสดี"
+
+#: .\templates\registration\password_reset_email.html:5
+msgid ""
+"We've received a request to reset your password. If you didn't make this "
+"request, you can safely ignore this email. Otherwise, click the button below "
+"to reset you password."
+msgstr ""
+
+#: .\templates\registration\password_reset_form.html:4
+msgid "Forgot Your Password?"
+msgstr "ลืมรหัสผ่าน"
+
+#: .\templates\registration\password_reset_form.html:7
+msgid "Forgot your password?"
+msgstr "ลืมรหัสผ่าน"
+
+#: .\templates\registration\password_reset_form.html:8
+msgid ""
+"Enter email address below, and we'll send you instructions for setting a new "
+"one."
+msgstr "ใส่อีเมล์ด้านล่าง ทางเราจะส่งวิธีการเปลี่ยนรหัสผ่านให้"
+
+#: .\templates\registration\password_reset_form.html:13
+msgid "Send me instructions!"
+msgstr "ส่งวิธีการ"
+
+#: .\templates\signup.html:6 .\templates\signup.html:9
+#: .\templates\signup.html:13
+msgid "Sign up"
+msgstr "สมัคร"
+
+#~ msgid "Coming Soon"
+#~ msgstr "กำลังมา"
+
+#~ msgid "ABOUT"
+#~ msgstr "เกี่ยวกับเรา"
+
+#~ msgid "Contact Us"
+#~ msgstr "ติดต่อเรา"
+
+#~ msgid "Go"
+#~ msgstr "ต่อไป"
+
+#~ msgid "Modules"
+#~ msgstr "โมดูล"

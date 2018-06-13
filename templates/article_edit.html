@@ -1,0 +1,20 @@
+<!-- templates/article_edit.html -->
+{% extends 'base.html' %}
+
+{% load static i18n %}
+
+{% block content %}
+    <style>
+        .container {
+            margin-bottom: 15px;
+        }
+    </style>
+	<div class="container text-center">
+        <h1>{% trans "Edit" %}</h1><br>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-info ml-2" type="submit">Update</button>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,443 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% trans "BRID | Welcome" %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shotcut icon" type="image/x-icon" href={% static 'static-only/admin/img/brid-logo-copy.jpg' %}>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+    }
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+    .jumbotron {
+      background-image: url( "{% static 'static-only/admin/img/planetone-wallpaper.jpg' %}" );
+      background-size: cover;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+    }
+    .container-fluid {
+      padding: 60px 50px;
+    }
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+    .logo {
+      color: #2123EE;
+      font-size: 200px;
+    }
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+    .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #2123EE;
+    }
+    .carousel-indicators li {
+      border-color: #2123EE;
+    }
+    .carousel-indicators li.active {
+      background-color: #2123EE;
+    }
+    .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+    }
+    .item span {
+      font-style: normal;
+    }
+    .panel-footer :hover {
+      border: 1px solid #2123EE;
+      background-color: #fff !important;
+      color: #2123EE;
+    }
+    .panel-footer h3 {
+      font-size: 32px;
+    }
+    .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+    }
+    .navbar {
+      margin-bottom: 0;
+      background-color: transparent;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+    }
+    .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #2123EE !important;
+      background-color: #fff !important;
+    }
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+    footer {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #2123EE;
+    }
+    .slideanim {visibility:hidden;}
+    .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+    }
+    @keyframes slide {
+        0% {
+          opacity: 0;
+          transform: translateY(70%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+    }
+    @-webkit-keyframes slide {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(70%);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .col-sm-4 {
+          text-align: center;
+          margin: 25px 0;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .logo {
+            font-size: 150px;
+        }
+    }
+    .language_chooser form {
+        display: inline;
+        margin-top: -15px;
+        padding: 0;
+        color: #fff !important;
+    }
+    .language_chooser button {
+        margin-top: 17px;
+        margin-bottom: 10px;
+        padding: 0;
+        border: none;
+        background: none;
+        color: #fff !important;
+        text-decoration: underline;
+        font-size: x-small;
+    }
+    @media (max-width: 768px) {
+        .language_chooser form {
+            margin-left: 17px;
+        }
+    }
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">{% trans 'BRID' %}</a>
+            </div>
+                <div class="language_chooser navbar-header">
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                        <input name="language" type="hidden" value="{{ language.code }}" />
+                        <button type="submit" class="btn btn-link">{{ language.code }}</button>
+                    </form>
+                {% endfor %}
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#services">{% trans "SERVICES" %}</a></li>
+                    <li><a href="#products">{% trans "PRODUCTS" %}</a></li>
+                    <li><a href="#support">{% trans "SUPPORT" %}</a></li>
+                    <li><a href="#press">{% trans "PRESS" %}</a></li>
+                    <li><a href="#contact">{% trans "CONTACT US" %}</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="jumbotron text-center">
+    <h1>{% trans "BRID Systems" %}</h1>
+    <p>{% trans "Your ERP Partner" %}</p>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>{% trans "ABOUT US" %}</h2>
+        <h4>{% trans "With two decades of experience in developing and implementing our PlanetOne ERP, we have now supported over one hundred business organizations all over Thailand" %}</h4><br>
+        <p>{% trans "PlanetOne ERP is a complete enterprise business accounting and management solution for manufacturing and businesses in Thailand. It is highly flexible yet integrated with best practice on business logic engine, thus allows businesses to transform their processes to be more competitive in the modern business environment. PlanetOne ERP covers wide range of manufacturing and business operations which includes: Material Management, Purchasing, Sales, CRM, SCM, Financials & Accounting, Account Receivable System, Account Payable System, General Ledger System, Asset Management, Hire Purchase, Building Management, and much more..." %}</p>
+        <p>{% trans "PlanetOne ERP Software is a fully integrated business system: Manufacturing, Distribution and Financial Accounting. Our PlanetOne ERP includes Purchasing System, Sales Order System, Inventory Control System, Production Planning System, MRP System, Job Cost System, Account Receivable System, Account Payable System, General Ledger System, CRM System, Mobile Applications, Service Center Management System, Hotel Management System, Assets Management System, and many more. It provides you with a better customer service, helps reducing inventory, and increases staff productivity. PlanetOne ERP is highly integrated with MRP II System. It meets local accounting and tax requirements with fully customizable reports system to fit your business." %}</p>
+    </div>
+    <div class="col-sm-4">
+      <img src={% static 'static-only/admin/img/planetone-box.gif' %}>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-time logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>{% trans "SERVICES" %}</h2><br>
+      <h4><strong>{% trans "Our Services:" %}</strong>{% trans "The services we provide have many different titles. Most of our clients don’t know exactly what they want when they call us but they do know of a problem that needs to be resolved or an opportunity that needs to be leveraged. We take the client’s needs and provide an elegant solution, turning our client’s ideas into digital reality. We work with our clients to help them determine exactly what they need then come up with a plan to achieve it within your time and budget requirements." %}</h4><br>
+      <p><strong>{% trans "System Integration:" %}</strong>{% trans "Brid Systems Co.,Ltd., a truly professional system integrator, provides customers with feasible solution based on their requirement and resources. We also provide services to integrate diverse hardware and software to ensure an optimal use of Information Technology through on-site support. Brid Systems Co.,Ltd offers customers with Turn-Key service in information system development including." %}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Products Section) -->
+<div id="products" class="container-fluid text-center">
+  <h2>{% trans "Products" %}</h2>
+  <h3>{% trans "Simple and Powerful" %}</h3><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-6">
+        <h4>{% trans "Quotation Module" %}</h4>
+        <p>{% trans "Develop quotes quickly and easily! Users can quickly quote items factoring in such costs as materials, taxes, and service fee markups. Service fee can be done as a percentage or amount. " %}</p>
+    </div>
+    <div class="col-sm-6">
+        <h4>{% trans "Purchasing" %}</h4>
+        <p>{% trans "You can maintain consistent controlled relationships with unlimited suppliers for full flexibility. Detailed information at your fingertips will allow you to see how you can improve your cash flow, from highlighting outstanding payments to improving credit control." %}</p>
+    </div>
+  </div><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-6">
+        <h4>{% trans "Sales Order" %}</h4>
+        <p>{% trans "A simple mouse click transforms a quote into a sales order. An entire quote can become a sales order. Allows you to keep track of what your customers are buying, when they buy and how much they purchase. Comprehensive customer records, with flexible terms of business, individual pricing and discount options store all the details of your customers." %}</p>
+    </div>
+    <div class="col-sm-6">
+        <h4>{% trans "Inventory Module" %}</h4>
+        <p>{% trans "PlanetOne manufacturing inventory software is tracked as it is received and used. Minimum and maximum inventory levels for items can be set. Users are “flagged”: if inventory levels fall below a pre set amount, or if inventory ordered/received exceeds the maximum pre set amount. System can prompt allows users to create a P.O. to reorder." %}</p>
+    </div>
+  </div><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-6">
+        <h4>{% trans "Shop Floor Control" %}</h4>
+        <p>{% trans "Users, with simple mouse clicks, can quickly create each job's step by step production procedures and inspection requirements, certification requirements, materials needed and deadlines. Allows an order to be split up into multiple shop travelers to be produced at separate times. Production Management tools are provided for the monitoring of production and output. At any time, the job status of a particular order can be checked including where it is in the production cycle, and the work remaining. Date range reports can be pulled detailing how much product was actually shipped during a given time. Other reports detail such things as work in production and the dollar value of that work. Managers can also easily review missed or approaching deadlines." %}</p>
+    </div>
+    <div class="col-sm-6">
+        <h4>{% trans "General Ledger" %}</h4>
+        <p>{% trans "As the backbone of your business management solution, PlanetOne accounting and finance solutions help you track and analyze your business information. With end-to-end integration, you can efficiently manage your general ledger, payables, receivables, inventory, analytical accounting, fixed assets, and cash flow as well as perform bank reconciliations and collections. You can also manage your financial processes across multiple currencies, locations, or companies." %}</p>
+    </div><br>
+  </div>
+  <div class="row text-center slideanim">
+    <div class="col-sm-12">
+        <h4>{% trans "Warehouse Management" %}</h4>
+        <p>{% trans "PlanetOne Warehouse Management Systems saves your business time and money through efficient warehouse processes. It also Reduces your warehouse costs and improves your customer service by speeding up the order handling process, Streamlines your warehouse operations by providing transparent and accurate inventory data, and Enables you to optimize your warehouse layout and space utilization." %}</p>
+    </div>
+  </div>
+</div><br>
+
+<!-- Container (Support Section) -->
+<div id="support" class="container-fluid text-center bg-grey">
+  <h2>{% trans "SUPPORT" %}</h2>
+  <h4>{% trans "Quality assurance" %}</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-6">
+      <a href="http://www.bridsys.com/forum/index.php"><h3>{% trans "PlanetOneERP Forum" %}</h3></a>
+      <p>{% trans "This community is all about PlanetOneERP discussions." %}</p>
+    </div>
+    <div class="col-sm-6">
+      <a href="http://www.bridsys.com:9090/jtrac"><h3>{% trans "BRID JTrac" %}</h3></a>
+      <p>{% trans "Users may request assistance and new feature upgrades and report bugs or defects through our Electronic Issues Processing System." %}</p>
+    </div>
+  </div>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <h4>{% trans "Providing value to our customers" %}</h4>
+      <p>{%  trans "We realize that our products are an integral part of your business-critical environment. That is why we provide comprehensive customer support services 24/7. Whether it is a basic question or complex product issue, our support services and expert technical analysts are available to effectively address your every need." %}</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>{% trans "PlanetOne ERP’s Support Team" %}</h4>
+      <p>{% trans "consists of professionals who are not only focused on providing the best support service, but also on perpetually improving themselves. We challenge each of our team members to increase their product or industry knowledge, and to pursue a variety of industry certifications. These efforts increase the confidence and capability of each support representative in delivering service to you." %}</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>{% trans "PlanetOne ERP offers" %}</h4>
+      <p>{% trans "comprehensive telephone and online support for its customers, with measured and proven responsiveness. In addition to quality support, you’ll have a variety of tools to help you get the most from your service plan." %}</p>
+    </div>
+  </div>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-12">
+      <a href="{% url 'java_download' %}"><h5>{% trans "Download JAVA SDKs" %}</h5></a>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Press Section) -->
+<div id="press" class="container-fluid bg-light text-center">
+    <h2>{% trans "News & Updates" %}</h2>
+    <h4>{% trans "Read news and updates written by our staffs" %}
+        <a href="{% url 'article_list' %}" role="button">{% trans "here" %}</a>.
+    </h4>
+    <h2>{% trans "Featured Playlist" %}</h2>
+          <iframe width="720" height="405" src="https://www.youtube.com/embed/VIDEO_ID?playlist=1eaPInZzpgQ,HR8gFsSAEc0,LY1vddINIEU,9Ibv-F65mqo"frameborder="0" allowfullscreen></iframe>
+            <br>
+    <span>จัดการบัญชีลูกหนี้ด้วย ERP | SME Smart Service | 9 พฤษภาคม 2559 | Smart SME</span><br><br>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">{% trans "CONTACT US" %}</h2>
+  <div class="row">
+    <div class="col-sm-5">
+        <p>{% trans "Contact us and we'll get back to you ASAP." %}</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> {% trans "40/30 Intamara 23, Sudhisarn Road, Samsenai, Phayathai, Bangkok 10400" %}</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +66 22714362</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> sales@bridsystems.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+          {% load widget_tweaks %}
+
+            <form class="form-horizontal" role="form" action="." method="post">
+                {% csrf_token %}
+                {% for field in form %}
+                    {% if field.errors %}
+                        <div class="form-group has-error">
+                            <label class="col-md-3 control-label" for="id_{{ field.name }}">{{ field.label }}</label>
+                            <div class="col-md-6">
+                                {{ field|attr:"class:form-control" }}
+                                <span class="help-block">
+                                    {% for error in  field.errors %}{{ error }}{% endfor %}
+                                </span>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="id_{{ field.name }}">{{ field.label }}</label>
+                            <div class="col-md-6">
+                                {{ field|attr:"class:form-control" }}
+                                {% if field.help_text %}
+                                    <p class="help-block"><small>{{ field.help_text }}</small></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                <div class="form-actions">
+                    <div class="col-md-offset-3 col-md-6">
+                        <button type="submit" class="btn btn-primary">{% trans "Send" %}</button>
+                    </div>
+                </div>
+                <br><br>
+
+            </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1629.1377851738312!2d100.55798388261033!3d13.793065919243434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c3b647a18a7%3A0x94706d2deeffc9f4!2sBRID+Systems+Co.%2C+Ltd.!5e0!3m2!1sen!2sth!4v1526912048539" width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+      });
+    });
+
+   $(window).scroll(function() {
+       var scroll = $(window).scrollTop();
+       if (scroll > 300) {
+           $(".navbar").css("background", "#2123EE");
+       }
+
+       else {
+           $(".navbar").css("background", "transparent");
+       }
+   });
+  })
+</script>
+
+</body>
+</html>
